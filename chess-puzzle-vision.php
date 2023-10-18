@@ -8,6 +8,7 @@ Author: TADLAOUI Hamza
 
 function display_chess_puzzle() {
     ob_start();
+	enqueue_chess_puzzle_scripts();
     ?>
 	<div id="chessboard"  style="width: 400px"></div>
     <?php
@@ -29,7 +30,7 @@ function enqueue_chess_puzzle_scripts() {
 ));
 
 }
-add_action('wp_enqueue_scripts', 'enqueue_chess_puzzle_scripts');
+
 
 
 ?>
